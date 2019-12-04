@@ -8,6 +8,7 @@ void HuffmanTree::loadMap(map<char, int> frequency_table)
 {
     // create an minimum priority queue in STL
     // insert your code here ...
+    // TODO
 
     
 
@@ -23,6 +24,7 @@ void HuffmanTree::mergeTree(HuffmanTreeNode *bt1, HuffmanTreeNode *bt2,
                        HuffmanTreeNode *pt)
 {
     // insert your code here ...
+    // TODO
 
     
 
@@ -39,6 +41,7 @@ void HuffmanTree::encode(map<char, string>& encoded_table)
     // result encoded_table: char -- character set, string -- encoding of leaf node, like "00", "1001"...
 
     // insert your code here ...
+    // TODO
     
 
 
@@ -52,6 +55,7 @@ string HuffmanTree::decode(const string& bin_str)
 {
     // decode a binary string to plaintext
     // insert your code here ...
+    // TODO
     
 
 
@@ -76,6 +80,7 @@ void HuffmanTree::release()
     vector<HuffmanTreeNode*> path;
 
     // insert your code here ...
+    // TODO
     
 
 

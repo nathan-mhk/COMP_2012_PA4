@@ -28,14 +28,13 @@ bool Utils::loadDictionary(const string& text_dic)
 
     // scan the string this->content, calculate the frequency table
     // insert your code here ...
-
-
-
-
-
-
-    
-
+    // DEBUG
+    for (string::const_iterator itr = content.begin(); itr != content.end(); ++itr) {
+        if (frequency_table.find(*itr) != frequency_table.end())
+            frequency_table[*itr] = 0;
+        else
+            ++frequency_table[*itr];
+    }
     return true;
 }
 
@@ -47,6 +46,15 @@ void Utils::buildTree()
 void Utils::setEncodedTable()
 {
     tree.encode(encoded_table);
+}
+
+inline int power(int pow) {
+    int value = 1;
+    while (pow != 0) {
+        value *= 2;
+        --pow;
+    }
+    return value;
 }
 
 void Utils::saveBinDictionary(const string& bin_file)
@@ -67,14 +75,58 @@ void Utils::saveBinDictionary(const string& bin_file)
     // you need to write integer 3 (bin form: 0000 0011) as one byte at the beginning of your binary file.
     // after saving data into .bin file, you should print out its hex form in command line
     // insert your code here ...
+    // DEBUG
 
+    // binCode stores 0s and 1s
+    string binCode = "";
+
+    // Store the Huffman code of all of the char in content into binCode
+    for (string::const_iterator itr = content.begin(); itr != content.end(); ++ itr) {
+        map<char, string>::const_iterator item = encoded_table.find(*itr);
+        binCode += item->second;
+    }
+
+    int cutOffNum = binCode.length() % 8;
     
+    // Fill (8 - cutOffNum) 0s to the end
+    for (int i = 0; i < (8 - cutOffNum); ++i)
+        binCode += "0";
 
+    if (cutOffNum != 0) {
+        // Convert to 8-bit bin
+        string header = "";
+        while (cutOffNum != 0) {
+            header = (cutOffNum % 2 == 0 ? "0" : "1") + header;
+            cutOffNum /= 2;
+        }
 
+        //Extent it to 8-bit
+        for (int i = 0; i < (8 - header.length()); ++i)
+            header = "0" + header;
+        
+        binCode = header + binCode;
+    }
 
+    char key;
+    string::const_iterator itr = binCode.begin();
+    while (ifile.get(key)) {
+        int dec = 0;
+        unsigned char bin;
 
-
-
+        // Convert 8-bit bin to dec
+        for (int i = 7; i >= 0; --i, ++itr) {
+            if (*itr == '1') {
+                dec += power(i);
+            }
+        }
+        bin = dec;
+        bin = bin ^ ((unsigned char)key);
+        ofile << bin;
+        cout << hex << (int)bin;
+    }
+    cout << endl;
+    ofile.close();
+    ifile.close();
 }
 
 void Utils::decode(const string& bin_file)
@@ -98,7 +150,7 @@ void Utils::decode(const string& bin_file)
     // key_file: decryption XOR key
     // search in the encoded table
     // insert your code here ...
-
+    // TODO
     
 
 
