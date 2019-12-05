@@ -57,6 +57,18 @@ inline int power(int pow) {
     return value;
 }
 
+// Convert an 8-bit binary string to dec
+int binToDec(const string& binString) {
+    int decimal = 0;
+    string::const_iterator itr = binString.begin();
+
+    for (int i = 7; i >= 0; --i, ++itr) {
+        if (*itr == '1')
+            decimal += power(i);
+    }
+    return decimal;
+}
+
 void Utils::saveBinDictionary(const string& bin_file)
 {
     // load key file
@@ -81,50 +93,43 @@ void Utils::saveBinDictionary(const string& bin_file)
     string binCode = "";
 
     // Store the Huffman code of all of the char in content into binCode
-    for (string::const_iterator itr = content.begin(); itr != content.end(); ++ itr) {
-        map<char, string>::const_iterator item = encoded_table.find(*itr);
-        binCode += item->second;
-    }
+    for (string::const_iterator itr = content.begin(); itr != content.end(); ++itr)
+        binCode += encoded_table.find(*itr)->second;
 
     int cutOffNum = binCode.length() % 8;
-    
-    // Fill (8 - cutOffNum) 0s to the end
-    for (int i = 0; i < (8 - cutOffNum); ++i)
-        binCode += "0";
 
     if (cutOffNum != 0) {
-        // Convert to 8-bit bin
+        // Fill (8 - cutOffNum) 0s to the end
+        for (int i = 0; i < (8 - cutOffNum); ++i)
+            binCode += "0";
+
+        // Convert cutOffNum to binary header
         string header = "";
         while (cutOffNum != 0) {
-            header = (cutOffNum % 2 == 0 ? "0" : "1") + header;
+            header = ((cutOffNum % 2 == 0) ? "0" : "1") + header;
             cutOffNum /= 2;
         }
 
-        //Extent it to 8-bit
+        // Zero extension, to 8-bit
         for (int i = 0; i < (8 - header.length()); ++i)
             header = "0" + header;
-        
+
         binCode = header + binCode;
     }
 
     char key;
-    string::const_iterator itr = binCode.begin();
+    int i = 0;
     while (ifile.get(key)) {
-        int dec = 0;
-        unsigned char bin;
+        // Convert the binary string to decimal byte by byte
+        unsigned char bin = binToDec(binCode.substr(i, 8));
 
-        // Convert 8-bit bin to dec
-        for (int i = 7; i >= 0; --i, ++itr) {
-            if (*itr == '1') {
-                dec += power(i);
-            }
-        }
-        bin = dec;
+        // XOR encryption, write to file, then print written value in hex
         bin = bin ^ ((unsigned char)key);
         ofile << bin;
         cout << hex << (int)bin;
+        i += 8;
     }
-    cout << endl;
+    cout << dec << endl;
     ofile.close();
     ifile.close();
 }
@@ -150,13 +155,15 @@ void Utils::decode(const string& bin_file)
     // key_file: decryption XOR key
     // search in the encoded table
     // insert your code here ...
-    // TODO
-    
+    // DEBUG
+    char byte;
+    while (ifile.get(byte))
+        bit_str += (unsigned char)byte;
 
-
-
-
-
+    // Handle the cut off
+    int cutOffLength = 0;
+    cutOffLength = bit_str.length() - binToDec(bit_str.substr(0, 8));
+    bit_str = bit_str.substr(8, cutOffLength);
 
     ifile.close();
     key_file.close();
