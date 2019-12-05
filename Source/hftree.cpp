@@ -4,32 +4,87 @@
 
 HuffmanTree::HuffmanTree() : hfTree(NULL) {}
 
+struct CompareWeight {
+    const char& minChar(const HuffmanTreeNode& hfTree) {
+        if ((hfTree.leftChild == NULL) && (hfTree.rightChild == NULL)) {
+            // non-tree node
+            return hfTree.key;
+        } else {
+            // TODO
+            // Tree node
+            // Find the min leaf
+            const char& left = minChar(*hfTree.leftChild);
+            const char& right = minChar(*hfTree.rightChild);
+            return ((left < right) ? left : right);
+        }
+    }
+
+    bool operator()(const HuffmanTreeNode& hft1, const HuffmanTreeNode& hft2) {
+        if (hft1.weight > hft2.weight)
+            return true;
+        else if (hft1.weight == hft2.weight) {
+            // TODO
+            const char& hft1Char = minChar(hft1);
+            const char& hft2Char = minChar(hft2);
+            return (hft1Char > hft2Char);
+
+        } else 
+            return false;
+        
+        // return hft1.weight > hft2.weight;
+    }
+};
+
 void HuffmanTree::loadMap(map<char, int> frequency_table)
 {
     // create an minimum priority queue in STL
     // insert your code here ...
-    // TODO
+    // DEBUG
 
+    // Construct a min priority queue
+    priority_queue<HuffmanTreeNode, vector<HuffmanTreeNode>, CompareWeight> pq;
     
+    for (map<char, int>::const_iterator itr = frequency_table.begin(); itr != frequency_table.end(); ++itr) {
+        HuffmanTreeNode node;
+        node.key = itr->first;
+        node.weight = itr->second;
+        pq.push(node);
+    }
 
+    // Build the tree
+    while (pq.size != 2) {
+        HuffmanTreeNode head;
+        head.leftChild = pq.pop;
+        head.rightChild = pq.pop;
 
+        head.leftChild->huffman_code = "0";
+        head.rightChild->huffman_code = "1";
+        
+        head.weight = head.leftChild->weight + head.rightChild->weight;
 
-
-
-
-
+        // HuffmanTreeNode left = pq.pop;
+        // HuffmanTreeNode right = pq.pop;
+        // mergeTree(&left, &right, &head);
+        
+        pq.push(head);
+    }
+    // Attach the root
+    hfTree->leftChild = pq.pop;
+    hfTree->rightChild = pq.pop;
 }
 
 void HuffmanTree::mergeTree(HuffmanTreeNode *bt1, HuffmanTreeNode *bt2,
                        HuffmanTreeNode *pt)
 {
     // insert your code here ...
-    // TODO
+    // DEBUG
+    bt1->huffman_code = "0";
+    bt2->huffman_code = "1";
 
-    
+    pt->leftChild = bt1;
+    pt->rightChild = bt2;
 
-
-
+    pt->weight = bt1->weight + bt2->weight;
 }
 
 
@@ -42,6 +97,7 @@ void HuffmanTree::encode(map<char, string>& encoded_table)
 
     // insert your code here ...
     // TODO
+    // Write INTO the encoded_table
     
 
 
@@ -81,6 +137,7 @@ void HuffmanTree::release()
 
     // insert your code here ...
     // TODO
+    // Post-order = LRC
     
 
 
