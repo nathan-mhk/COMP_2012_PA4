@@ -111,7 +111,7 @@ void Utils::saveBinDictionary(const string& bin_file)
         }
 
         // Zero extension, to 8-bit
-        for (int i = 0; i < (8 - header.length()); ++i)
+        for (unsigned int i = 0; i < (8 - header.length()); ++i)
             header = "0" + header;
 
         binCode = header + binCode;

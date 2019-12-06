@@ -34,7 +34,7 @@ void HuffmanTree::loadMap(map<char, int> frequency_table)
 {
     // create an minimum priority queue in STL
     // insert your code here ...
-    // DEBUG
+    // DEBUGGING
 
     // Construct a min priority queue
     priority_queue<HuffmanTreeNode*, vector<HuffmanTreeNode*>, CompareWeight> pq;
@@ -47,7 +47,8 @@ void HuffmanTree::loadMap(map<char, int> frequency_table)
     }
 
     // Build the tree
-    while (pq.size != 2) {
+    // FIXME
+    while (pq.size() != 2) {
         HuffmanTreeNode* parent;
         HuffmanTreeNode* left = pq.top();
         pq.pop();
@@ -79,7 +80,7 @@ void HuffmanTree::mergeTree(HuffmanTreeNode *bt1, HuffmanTreeNode *bt2,
                        HuffmanTreeNode *pt)
 {
     // insert your code here ...
-    // DEBUG
+    // FIXME
     HuffmanTreeNode*& left = bt1;
     HuffmanTreeNode*& right = bt2;
     HuffmanTreeNode*& parent = pt;
@@ -144,6 +145,7 @@ string HuffmanTree::decode(const string& bin_str)
         else
             node = node->rightChild;
     }
+    return text;
 }
 
 void HuffmanTree::release()
