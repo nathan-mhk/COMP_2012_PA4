@@ -34,7 +34,7 @@ void HuffmanTree::loadMap(map<char, int> frequency_table)
 {
     // create an minimum priority queue in STL
     // insert your code here ...
-
+    
     // Construct a min priority queue
     priority_queue<HuffmanTreeNode*, vector<HuffmanTreeNode*>, CompareWeight> pq;
 
@@ -52,20 +52,8 @@ void HuffmanTree::loadMap(map<char, int> frequency_table)
         pq.pop();
         HuffmanTreeNode* right = pq.top();
         pq.pop();
-        
-        // Debug msg
-        // cout << "Merging==========================" << endl;
-        // cout << "left:  [" << left->key << "], w(" << left->weight << ")" << endl;
-        // cout << "right: [" << right->key << "], w(" << right->weight << ")" << endl;
 
         mergeTree(left, right, parent);
-
-        // Debug msg
-        // cout << "Merge result:" << endl;
-        // cout << "parent: [" << parent->key << "], w(" << parent->weight << "), hf[" << parent->huffman_code << "]" << endl;
-        // cout << "Left:   [" << parent->leftChild->key << "], w(" << parent->leftChild->weight << "), hf[" << parent->leftChild->huffman_code << "]" << endl;
-        // cout << "Right:  [" << parent->rightChild->key << "], w(" << parent->rightChild->weight << "), hf[" << parent->rightChild->huffman_code << "]" << endl;
-        // cout << "=================================" << endl;
 
         pq.push(parent);
     }
@@ -87,6 +75,7 @@ void HuffmanTree::mergeTree(HuffmanTreeNode *bt1, HuffmanTreeNode *bt2,
                        HuffmanTreeNode *pt)
 {
     // insert your code here ...
+
     HuffmanTreeNode*& left = bt1;
     HuffmanTreeNode*& right = bt2;
     HuffmanTreeNode*& parent = pt;
@@ -111,6 +100,7 @@ void HuffmanTree::encode(map<char, string>& encoded_table)
     // result encoded_table: char -- character set, string -- encoding of leaf node, like "00", "1001"...
 
     // insert your code here ...
+
     // Non-recursive level-order traversal
     queue<HuffmanTreeNode*> hftQueue;
     if (hfTree != NULL)
@@ -129,17 +119,12 @@ void HuffmanTree::encode(map<char, string>& encoded_table)
             hftQueue.push(head->rightChild);
         }
     }
-
-    // Debug msg
-    // for (map<char, string>::const_iterator itr = encoded_table.begin(); itr != encoded_table.end(); ++itr)
-    //     cout << "[" << itr->first << "] = [" << itr->second << "]" << endl;
 }
 
 string HuffmanTree::decode(const string& bin_str)
 {
     // decode a binary string to plaintext
     // insert your code here ...
-    // FIXME
 
     string text = "";
     const HuffmanTreeNode* node = hfTree;
@@ -174,6 +159,7 @@ void HuffmanTree::release()
     vector<HuffmanTreeNode*> path;
 
     // insert your code here ...
+
     // Reverse of post-order, CRL
     // Pop the top one first (C), then check:
     // If not leaf node, push L then R to stack, repeat

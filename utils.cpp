@@ -28,21 +28,13 @@ bool Utils::loadDictionary(const string& text_dic)
 
     // scan the string this->content, calculate the frequency table
     // insert your code here ...
+
     for (string::const_iterator itr = content.begin(); itr != content.end(); ++itr) {
         if (frequency_table.find(*itr) != frequency_table.end())
             ++frequency_table[*itr];
         else 
             frequency_table[*itr] = 1;
     }
-
-    // Debug msg
-    // cout << "frequency_table==================" << endl;
-    // cout << "[" << content << "]" << endl;
-    // for (map<char, int>::const_iterator itr = frequency_table.begin(); itr != frequency_table.end(); ++itr) {
-    //     cout << "[" << itr->first << "][" << itr->second << "]" << endl;
-    // }
-    // cout << "=================================" << endl;
-
     return true;
 }
 
@@ -106,15 +98,12 @@ void Utils::saveBinDictionary(const string& bin_file)
     // after saving data into .bin file, you should print out its hex form in command line
     // insert your code here ...
 
-    // binCode stores 0s and 1s
+    // binCode stores only 0 and 1
     string binCode = "";
 
     // Store the Huffman code of all of the char in content into binCode
     for (string::const_iterator itr = content.begin(); itr != content.end(); ++itr)
         binCode += encoded_table.find(*itr)->second;
-
-    // Debug msg
-    // cout << "binCode [" << binCode << "]" << endl;
 
     int cutOffNum = binCode.length() % 8;
 
@@ -130,9 +119,6 @@ void Utils::saveBinDictionary(const string& bin_file)
         binCode = header + binCode;
     }
 
-    // Debug msg
-    // cout << "Final binCode [" << binCode << "]" << endl;
-
     char key;
     int i = 0;
     while (ifile.get(key)) {
@@ -145,7 +131,7 @@ void Utils::saveBinDictionary(const string& bin_file)
         cout << setfill('0') << setw(2) << hex << (int)bin;
         i += 8;
     }
-
+    
     cout << dec << "\n" << endl;
     ofile.close();
     ifile.close();
@@ -185,15 +171,9 @@ void Utils::decode(const string& bin_file)
         bit_str += binString;
     }
 
-    // Debug msg
-    // cout << "bit_str = [" << bit_str << "]" << endl;
-
     // Handle the cut off
     int cutOffLength = bit_str.length() - 8 - binToDec(bit_str.substr(0, 8));
     bit_str = bit_str.substr(8, cutOffLength);
-
-    // Debug msg
-    // cout << "Final bit_str = [" << bit_str << "]" << endl;
 
     ifile.close();
     key_file.close();
