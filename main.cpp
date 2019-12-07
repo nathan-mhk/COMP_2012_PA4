@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     Utils ut;
-    if (ut.loadDictionary("../paper.txt")) {
+    if (ut.loadDictionary("text.txt")) {
         ut.buildTree();
         ut.setEncodedTable();
         cout << "[start compressing file as encode_paper.bin ...]" << endl;

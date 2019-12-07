@@ -28,13 +28,21 @@ bool Utils::loadDictionary(const string& text_dic)
 
     // scan the string this->content, calculate the frequency table
     // insert your code here ...
-    // DEBUG
     for (string::const_iterator itr = content.begin(); itr != content.end(); ++itr) {
         if (frequency_table.find(*itr) != frequency_table.end())
-            frequency_table[*itr] = 0;
-        else
             ++frequency_table[*itr];
+        else 
+            frequency_table[*itr] = 1;
     }
+
+    // Debug msg
+    // cout << "frequency_table==================" << endl;
+    // cout << "[" << content << "]" << endl;
+    // for (map<char, int>::const_iterator itr = frequency_table.begin(); itr != frequency_table.end(); ++itr) {
+    //     cout << "[" << itr->first << "][" << itr->second << "]" << endl;
+    // }
+    // cout << "=================================" << endl;
+
     return true;
 }
 
@@ -69,6 +77,18 @@ int binToDec(const string& binString) {
     return decimal;
 }
 
+// Convert decimal to 8-bit zero extende binary string
+void decToBin(int decimal, string& binString) {
+    while (decimal != 0) {
+        binString = ((decimal % 2 == 0) ? "0" : "1") + binString;
+        decimal /= 2;
+    }
+    while (binString.length() != 8)
+        binString = "0" + binString;
+}
+
+
+string result = "";
 void Utils::saveBinDictionary(const string& bin_file)
 {
     // load key file
@@ -87,7 +107,6 @@ void Utils::saveBinDictionary(const string& bin_file)
     // you need to write integer 3 (bin form: 0000 0011) as one byte at the beginning of your binary file.
     // after saving data into .bin file, you should print out its hex form in command line
     // insert your code here ...
-    // DEBUG
 
     // binCode stores 0s and 1s
     string binCode = "";
@@ -96,40 +115,41 @@ void Utils::saveBinDictionary(const string& bin_file)
     for (string::const_iterator itr = content.begin(); itr != content.end(); ++itr)
         binCode += encoded_table.find(*itr)->second;
 
-    int cutOffNum = binCode.length() % 8;
+    // Debug msg
+    // cout << "binCode [" << binCode << "]" << endl;
+    result = binCode;
 
-    if (cutOffNum != 0) {
-        // Fill (8 - cutOffNum) 0s to the end
-        for (int i = 0; i < (8 - cutOffNum); ++i)
-            binCode += "0";
+    // int cutOffNum = binCode.length() % 8;
 
-        // Convert cutOffNum to binary header
-        string header = "";
-        while (cutOffNum != 0) {
-            header = ((cutOffNum % 2 == 0) ? "0" : "1") + header;
-            cutOffNum /= 2;
-        }
+    // if (cutOffNum != 0) {
+    //     // Fill (8 - cutOffNum) 0s to the end
+    //     for (int i = 0; i < (8 - cutOffNum); ++i)
+    //         binCode += "0";
 
-        // Zero extension, to 8-bit
-        for (unsigned int i = 0; i < (8 - header.length()); ++i)
-            header = "0" + header;
+    //     // Convert cutOffNum to binary header
+    //     string header = "";
+    //     decToBin(cutOffNum, header);
 
-        binCode = header + binCode;
-    }
+    //     binCode = header + binCode;
+    // }
 
-    char key;
-    int i = 0;
-    while (ifile.get(key)) {
-        // Convert the binary string to decimal byte by byte
-        unsigned char bin = binToDec(binCode.substr(i, 8));
+    // // Debug msg
+    // // cout << "Final binCode [" << binCode << "]" << endl;
 
-        // XOR encryption, write to file, then print written value in hex
-        bin = bin ^ ((unsigned char)key);
-        ofile << bin;
-        cout << hex << (int)bin;
-        i += 8;
-    }
-    cout << dec << endl;
+    // char key;
+    // int i = 0;
+    // while (ifile.get(key)) {
+    //     // Convert the binary string to decimal byte by byte
+    //     unsigned char bin = binToDec(binCode.substr(i, 8));
+
+    //     // XOR encryption, write to file, then print written value in hex
+    //     bin = bin ^ (unsigned char)key;
+    //     ofile << bin;
+    //     cout << setfill('0') << setw(2) << hex << (int)bin;
+    //     i += 8;
+    // }
+
+    // cout << dec << "\n" << endl;
     ofile.close();
     ifile.close();
 }
@@ -155,20 +175,34 @@ void Utils::decode(const string& bin_file)
     // key_file: decryption XOR key
     // search in the encoded table
     // insert your code here ...
-    // DEBUG
-    char byte;
-    while (ifile.get(byte))
-        bit_str += (unsigned char)byte;
 
-    // Handle the cut off
-    int cutOffLength = 0;
-    cutOffLength = bit_str.length() - binToDec(bit_str.substr(0, 8));
-    bit_str = bit_str.substr(8, cutOffLength);
+    // char byte;
+    // char key;
+    // while (key_file.get(key)) {
+    //     ifile.get(byte);
+
+    //     // XOR decrpytion, convert it to binary string, then stored it into bit_str
+    //     unsigned code = (unsigned char)byte ^ (unsigned char)key;
+    //     string binString = "";
+    //     decToBin((int)code, binString);
+    //     bit_str += binString;
+    // }
+
+    // // Debug msg
+    // // cout << "bit_str = [" << bit_str << "]" << endl;
+
+    // // Handle the cut off
+    // int cutOffLength = bit_str.length() - 8 - binToDec(bit_str.substr(0, 8));
+    // bit_str = bit_str.substr(8, cutOffLength);
+
+    // Debug msg
+    // cout << "Final bit_str = [" << bit_str << "]" << endl;
 
     ifile.close();
     key_file.close();
 
     // using huffman tree you've built before to decode the bit string
-    string plaintext = tree.decode(bit_str);
+    // string plaintext = tree.decode(bit_str);
+    string plaintext = tree.decode(result);
     cout << plaintext << endl << endl;
 }
