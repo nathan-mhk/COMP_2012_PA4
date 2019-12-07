@@ -1,0 +1,147 @@
+[start compressing file as encode_paper.bin ...]
+e3beb11fcd6c67e34435f78c84fada8e4756f817f8f04a2d3d5544fc12e411356558ff8b9f25ac530f0291fefddc65b50f2dba1dae89e14a566f387b039ead706341577565f6d80a7638eea63de4ce3ea5ab62607c4a8c786dd07472502fbc096cacddf6bca8b1dcc43c6b1e167c2ff2e31167344107a72564e094a968ce647fc8f10e10bfbc8e0e2dc36957c65f337c3d22e786daf390ef1f4449801ae6b4af9f84a7a261677256b5715428fa63cdc115bc49318a79f5d5b944f5fb8c6e46dca97693663fe59849322a193c07d05e03ec6c767a140546c0c1d4cc738602ebc397ddc0aa5838a589bb89d9bebc20c461a18e4e3ed91d55dca579811bd5231277c159fb0d2cbf375c5f76771dc62c9d7a2534b11ca62c8fec56ea25ff1e0191c4f1e4f3f27cc410091ad0939ed739d460fc2224d225726fd9a094f534c2aacda521d6babd7244b97c180a7cb01a8ff890a49dfa96e83d6a8f1faf7b1ac4dbbc89b163708ae52f8831af8c5763684f65ceecfd2b3932fa03f6a404a90bbedebf67bb200bea8a54406914ba6a9e0f441d5e7697cff50860d5aa174438f39a4188e137b8b96710b2d8ec2d79f65faaf2f4cee684c74256a60fcb6b2ec0f4873ecaad9c246ba3d9bbf1ce9c92978f4ba44c601dc557ee9da9692f58b3ccc7e04f3ff7c7459b10320248500b23803f7a49c8f448fe7a616af8b596191671e1ec3b667e2f21feb558c9f6e6a8dfbfe2c0dc3169c6fca3a1e3bd06a9e45a547c7f7bc08e3fca7bf9aa50333ab8e3e51784c7dbed4b702a64f4cf413a28d4d79385f98717fa9670e630276718280cb4a570e4c5814d8174a4c14ebd9de8a42e8c210802eebbe257c615bf33ff253ef40f7f1a5bce817d6926a0b4fa5a44f2958c924e670d266451a52ddbcabe5b0fe3a20696fed65d671a6fd5e24f8f6529ef9320a0199c1fc665a876b4e265772e1bb480766eec123755d45120fa5e261c868b4896c85230ce5adc8a69880eff0412adf0c9962662e24de3b9740de6c8e88f93674b4d319ebbac8403604d8c1f40b544f8cfb38b3d88ee33d01d7122a3175559090308f9ddc1789898302c7d808d4b409fcb655eff8dad445a89e23be617a0408a4b05097476d92bb45792467a2b7ca7614aedb109fa016b296257f89fcb8162e9d1a4a28a6d590de6fad3d6cbbe80cb0ce9db2bb73f918716d987767deada917dfdd245aed96c3f36ab771835429b53bb024b89a76b69d14d849962d463f7492495e4f33a4c0d552e1d7defdcc067453fb17302b674509fda69b29da472d52c6e9118cd3d8f988a3cb2e630ac56b73614a94baff719be56aaa4d346c7f6fb4b0f2e1cbdb1d5f4b5a9285fabf7456b81a53791d432c8444e3b689ffc57954df178b4738cb75c8a1941f946ce7a946f85be0941f88fb200a163aed63c3ff843eecfaab5a2e887af3261bdaa38d8409dee178ef74d5047f98896fa57499a3d7d73d6d33c4b03360056c1074c5963244e7cfbcacc322999f16f80123b66053a2357170f6d54c6d5b95b67dd865b2fa820754ea2fbc50e21abe57b1b0b3ae531ebfb4f96435490d1ea2bf6cef748e676f8d3f38b71d47b393d9088e1f6d364f69fd00e4d5d728ee99872d7c8db522805d034362c9a8093762268d628a9109f282f5f6aad422723761085f9763a0e799328a19852a00dbcf9c738800da1b4bc86e16398dbcd3436c3f50d9da35ff30b92e6b5d11a7b0ef21624f0af926c837d2f9f0764962a461f1be0e0f8de346b74a2f9982ac0aaae6eee10c968ce462123591d9719443cdf186cfaf56f7be1be470310bcb3de440a0824d987d0a6b193621c9b4ba92b4a84c146344b5e07d94f9c91347c30e3be29d682bbca689013cd3f75a089c97964815aa0e738c2c3aa7e9597728aa03fa7b1bf3e9a0d0e797ad62296a63838319d303bed742aeff7afe3a278f0391ddf61ea6ee3a93ae7de6bbe49e5d170393783b0738612391730e4e617b306c0a88b5cfc3be07aa326774291f676e9e8d12db959e427cc31776748d4312ac72aa08ca73d5ee9552ae853df771123408390357f5086440a28f604b2eab84172bb912021c61c6c3cbe314c5ef38aa6cbd594d00682333f534952ae765008e81a002c52e032dd9cc713db28efc871e3c41f46430ecda84accf1a63f5e0003509b99fb9a8057bc1dbf64c4145acea36bafe1818d202487b8605a55d22b3cf9fd7bb55136306e6086ae3cd1eaa32d08a3192e68dd155d0fa100be41bdb6b74444267d457f50e030af24be5c1ed8393c487adfd000be311d5e7c18a6f439a8e41643c4910fab57c1fa7f33f98f741c966084209df04edd0b09c98eef2bdb35809ef00231e2ef36790d3d61091472671656a1d19d0c590852ead89ea19ebde5fda45cd0bc24d23ae66f28ce58ea5fe249d5061249202ffb3ebe189e8737728da878c2ae055410e5f24030c7253a17b9630e15c4f01fdc99f4f3c0b646ae7ad2b73f451539f4ba14bbb73ddbfd4fe0fcc6ce789c9c6d657e1cc7f83556fd7ed578da515412a9d8c320cfafc3806bcc860f84e2e450453aa71d42c10e939ccd27c2c3c1fcf3ea773cfce309608f29a84988aa61126aeda67e83261408cf1cf35b0af41ec3dcb637a1e6c2d1c862e7b05f1b959014cae624ebb1e29d216cad9d9f502dc7ea78e2ff29c44562271fdd2522537d0024de53fbe0f4225b21a8a0178eec93eb2bd44eb1992145f4aa76a14728e8ed263c393870bcc7dfad0fc85ea03301302f14c1cf87a21f58baa9f45a73acedc26dccfa8580e362a00b92afbec39c1468d8fe8c28a2ac2a735297a7ae25503e4788e70397629f08139045dcd388f0b2171dcffac3241c70129e29adf0967bdd1b091101ad673356c078c79d687db5635c586f7e5a75c7ec7a55d574abf1e4550f08fbd656b5f1b453a9c7112fd86b039fb85a672bb908e8918b9a49e95e3073fc8b60af67628c4d0f608cfccf4252264dce2f88100bd75060297b5886f8478474edfbe9dcd07bda63245211eb5fba974bf0ae7dafa12812de9f5f88474f44530bc689a125f94deffc13e3d1197217cbaa1fe4ecc8d2900eea76268e9a1f0e20372650f11e910cbeb3f88ae7b507e36e3ef1097a62c4afc63faa36f491229e9d7408ab11b0cddd314b8e289d6ca1fd54c83c022185348175b27c5110c3b27c4e1f71a3aad95d22941bd6849a2eeeb3becf8f9449f618e6a300410f5c43fb40f03a18494eb2e9ad6ca4128f6a11e0b157c605041a44081bc28385393fb1dfa0d44e61df981f4e51581932811332574bee7eab87985ad6e07908c8201644501d613c74fa3349ed4efa0327e6d5cf5274746b3086d1e189de1c435f636bedd9ed0be0438ef08cf1397c35717731b451bb4852f511162dede7aa7ae7438e14e11cf618e104d07262d7cd7ca79e70e140b66795b6d8476b5b078fa3c88dfe40190c521742a3ac403b2c914961a8c1f806ad663a300c07a9e26500bbde0077c596b237b3190ecee42a5547d48172e5c627341dddb601ac7107a676b38f13a81cf96f3fcd60bb6e8b43f20f75e112e713510627e38dcbcaf2136c51b276814da6686efded34939fa5ed17f5a87351d3c881ebbb55bf7bb1dfbe39257aa1f8537d9aabd1b2fb9e3383d564ae271edcae3cb265e4165e28ca1ac6b8fbbba9a4493405585963d0016e719e3f7ebd337af8fb1cf8661fd456c9dabe270c2cd6daeba71b4a1d235d6ed92865b6b1daea3f09c68717422208f4fa88d2a4bb0414b83f473fd90ef17741a37a254f365248507133fa363af7445abed3e5340afa125b1ef55f20f7676216a29c930c7c939a931e5bb61e2a19ff43754e8473e716c593bee2766910d10656582f5cb9c4082d8afaf125509b3dfbec1903836caa09a16c9cfc8911e4c199532dac062c3290eeebeb960466c08ad37fa46b3151069f044c4c119ab15c0376a3e36c076a43c2227acafa438dd5c8e28708f2b562da9eb7a056c66be146aff0c21bf58154d0e2ace6788e91e015f7bfe24c81810b512af95786faa75f8e28f63a087c941bcbb6d451a8f79ac844aef115d8a6f72a4a0c627de528f9d16f71964a477bcb073286c771acfe287301302bde480770ecba401d6647dba0c9e5b9c28c6a98702ceef88c456d92d97958b29dc74b38cfcdd65e9b695b3a064e2744a4c8e644de35e4249c5b7607c77f2cb130cb252d93177cd12b21e560751eaadc880311d289c9bbf9bdab692e9b8da08842640cf912761ca3167b2325249b93a0317f5516ef2e91eb25ca02b1d0d4d1bea3d136ed7877d8f80bce3f4487933ea7b219559a7dea3b445b037e6676d85038fc955d343e48bd56e7721bdc7ef7788959bb8fae2778d5d1cb54dd11b93fb2086f1df4d732d88e42f5ea6d24a2e993f70b230dcf337294cc75735c073f733e0368cc8e020e32e1690efbb3ca15b4dfeb07e0024432a9259fd101c84f27dbde39893d5edb401b9eb6236030ab3469ee64d91060d4d6832a275053985d945764521ef2eea749e3eb4cd7df1d624a7e4efacb1932d7e1dbd96dfda9634cb5135c59b786a964a6b1df1b432efb391c39821f09077648c2ebd6cd1ee711d859c6c470e7890a6d31d998e0bb727b1f7e7ded7fdc64176bb9763d1be036eecf7d290a4dd74a4d8ebc7ea20fa1ce9966a6e18e4ceed2f6d01ff8b0ae3cd78208bdc7bd683b7baeb8e7f929f44451223c5670988ce055a2c5700a783fe0dd073277d5a1230f083cb13d8abdfdd140e96f50a755f82da842e542b132d6770d843aabb2eca73148f3100ca6f3220b76f3f0e62ef95c4670f5dcd88d708ca4528870d27f2e32afcf0cacc24d20298531caa28890a4ecfb3a580742ba3673b03a9bce4a70a0defdf24ab7d7554f60d234adbe3b3b26700212489e43bb86be2b6db407252e284b7b22b8bb69577871b75950e7114e9ef2a2bb3163ee0dd3da1cc70a8ff9689486b38188ae1afb4ab62ac99e0841c1939cd1db256f9303de7f119295ec
+
+[compressed file encode_paper.bin saved. ]
+
+[start decoding...]
+go here hahahahah
+TAIWAN BUYS 340,000 TONNES OF U.S. MAIZE
+  The joint committee of Taiwan's maize
+  importers awarded contracts to five U.S. Companies for seven
+  shipments totalling 340,000 tonnes of maize for delivery
+  between September 1 and December 20, a committee official said.
+      United Grain Corp of Oreg
+U.S. ENERGY COSTS ROSE IN FEBRUARY BY 1.9 PCT
+  Consumer energy costs rose 1.9 pct
+  in February following a sharp rise last month, the Labor
+  Department said.
+      The February increase in the overall energy costs,
+  including petroleum, coal and natural gas, followed a 0.2 pct
+  drop in December
+DENPAC CORP <DNPC> YEAR LOSS
+  Shr loss one ct vs loss one ct
+      Net loss 483,518 vs loss 220,582
+      Sales 381,841 vs 400,518
+      NOTE: 1985 net includes 196,868 dlr gain from forgiveness o
+  accrued interest due to affiliates.
+  
+
+
+BILZERIAN UPS PAY 'N PAK <PNP> STAKE TO 9.9 PCT
+  Investor Paul Bilzerian, who has
+  said he may seek control of Pay 'n Pak Stores Inc, said he
+  raised his stake in the company to one mln shares, or 9.9 pct
+  of the total, from 721,900 shares, or 7.2 pct.
+      In a filing with the Securities an
+LITTLE MOVEMENT ON HAMBURG FISHMEAL MARKET
+  The Hamburg fishmeal market saw little
+  movement in the past week with demand slack as in other protein
+  feed sectors, trade sources said.
+      Prices edged up on firmer origin offering levels and the
+  stronger dollar. Sellers quoted 64 pct fishmeal a
+MEXICO BUYS 51,000 TONNES U.S. SOYBEANS
+  Mexico bought 51,000 tonnes of U.S.
+  number two yellow soybeans in an overnight tender, for various
+  ocean and rail shipments in May, private export sources said.
+      About 40,000 tonnes sold for ocean shipment at prices
+  ranging from 199.67 to 210.17 d
+COLOMBIA BUYS 25,000 TONNES FRENCH WHEAT - TRADE
+  Colombia recently bought 25,000 tonnes of
+  French soft wheat at 108 dlrs per tonne, c and f, for end-April
+  shipment, trade sources said.
+      This follows the country's tender for 25,000 tonnes of
+  optional origin wheat for shipment April 20-30
+TAIWAN BUYS 54,000 TONNES OF U.S. SOYBEANS
+  The joint committee of Taiwan soybean
+  importers awarded a contract to Cigra Inc of Chicago to supply
+  a 54,000 tonne cargo of U.S. Soybeans, a committee spokesman
+  told Reuters.
+      The cargo, priced at 213.87 U.S. Dlrs per tonne c and f
+  Taiwan, i
+TAIWAN BUYS 462,000 TONNES OF U.S. MAIZE
+  The joint committee of Taiwan's maize
+  importers awarded contracts to five U.S. Companies to supply a
+  total of 462,000 tonnes of maize for delivery between May 10
+  and October 10, a committee spokesman said.
+      Cigra Inc won a contract for a cargo of
+MINAS DE ALMADEN RAISES MERCURY PRICE
+  Spain's Minas de Almaden y Arrayanes S.A.
+  has agreed with Algerian producer ENOF to establish a minimum
+  price of 300 dlrs per flask for spot mercury sales, Almaden
+  spokesman Jesus Gallego said.
+      In response to enquiries from Reuters, he said his com
+SHONEY'S INC <SHON> 1ST QTR FEB 15 NET
+  Shr 31 cts vs 27 cts
+      Qtly div four cts vs four cts prior
+      Net 11.4 mln vs 9,905,528
+      Revs 194.3 m ln vs 171.7 mln
+      Note: Qtly div is payable April 22 to shareholders of
+  record April three.
+  
+
+
+NORTH YEMEN BOUGHT WHITE SUGAR AT TENDER - TRADE
+  North Yemen at its weekend tender bought
+  white sugar from a French operator acting on behalf of a Swiss
+  house at 214.70 dlrs a tonne c and f, traders said.
+      The amount bought was not immediately available, although
+  the country had sought 
+LOCTITE CORP <LOC> 3RD QTR MARCH 31 NET
+  Shr 96 cts vs 53 cts
+      Net 8,663,000 vs 4,798,000
+      Revs 89.7 m ln vs 66.8 mln
+      Nine mths
+      Shr 2.33 dlrs vs 1.67 dlrs
+      Net 21.1 mln vs 15.1 mln
+      Revs 241.3 mln vs 192.8 mln
+ 
+
+TAIWAN BUYS 27,000 TONNES OF U.S. SOYBEANS
+  The joint committee of Taiwan's soybean
+  importers awarded a contract to Richco Grain Ltd of New York to
+  supply a 27,000-tonne cargo of U.S. Soybeans, a committee
+  spokesman told Reuters.
+      The shipment, priced at 210.34 U.S. Dlrs per tonne c and 
+PETRIE STORES CORP <PST> SETS QUARTERLY
+  Qtly div 17-1/2 cts vs 17-1/2 cts prior
+      Pay April 20
+      Record April 2.
+  o
+  
+
+
+FOUR SUGAR CARGOES SOLD TO CHINA YESTERDAY -TRADE
+  Four cargoes of raw sugar were sold to
+  China yesterday via the London trade to supplement the
+  country's current nearby buying programme, traders said.
+      The sugar was reported sold at around 160 dlrs a tonne c
+  and f for July/August shipme
+TAIWAN BUYS 32,000 TONNES OF U.S. SOYBEANS
+  The joint committee of Taiwan's soybean
+  importers awarded a contract to Cargill Inc of Minneapolis,
+  Minnesota, for supply of one 32,000 tonne cargo of U.S.
+  Soybeans, a committee spokesman told Reuters.
+      The cargo, priced at 249.10 U.S. Dlrs per
+TAIWAN BUYS 60,000 TONNES OF U.S. MAIZE
+  The joint committee of Taiwan's maize
+  importers has awarded contracts to two U.S. Companies to supply
+  two shipments of maize, totalling 60,000 tonnes, a committee
+  spokesman told Reuters.
+      Continental Grain Co of New York received the first 30,000
+
+ALGERIA BUYS 75,000 TONNES EEP WHEAT - TRADE
+  Indications are that USDA accepted
+  Algeria's bid for 75,000 tonnes of hard red winter wheat, but
+  rejected bids for the remaining 225,000 tonnes under its export
+  bonus tender, U.S. exporters said.
+      USDA accepted Algeria's bid of 94.00 dlrs per
+ALGERIA TENDERING FOR BALANCE EEP WHEAT - TRADE
+  Algeria is tendering tonight for
+  225,000 tonnes of hard red winter wheat at 94.00 dlrs per
+  tonne, c and f, the balance of its original tender under the
+  export bonus program, U.S. exporters said.
+      Algeria bought 75,000 tonnes for November a
+
+[start releasing the huffman tree...]
+1144 65 17 2 2 4 1 1 2 2 4 8 4 5 9 17 34 17 18 35 69 134 136 270 282 552 35 37 72 73 145 74 74 148 293 75 38 19 10 10 20 39 77 152 39 20 20 40 79 82 161 313 606 1158 2302 41 21 21 42 83 42 43 85 168 87 21 22 43 22 22 44 87 174 342 364 706 88 89 177 44 47 91 98 189 366 193 5 3 3 6 11 6 6 12 23 13 13 26 49 50 99 105 204 397 763 1469 109 111 220 228 448 27 14 7 7 14 28 55 58 113 119 232 236 468 916 120 15 16 31 33 64 64 128 248 250 498 254 268 522 1020 1936 3405 5707
+[successfully released.]
